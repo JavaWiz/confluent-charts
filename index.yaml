@@ -3,7 +3,7 @@ entries:
   confluent-charts:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-04-30T02:03:43.6938598+05:30"
+    created: "2023-04-30T02:48:49.961926+05:30"
     dependencies:
     - condition: cp-kafka.enabled
       name: cp-kafka
@@ -34,9 +34,47 @@ entries:
       repository: file://./charts/cp-control-center
       version: 0.1.0
     description: A Helm chart for Confluent Platform Community Edition
-    digest: 96ff5d79d9e38a5dd18932000e0ef34032279864f040bfa002cb5e7856ff80f3
+    digest: 5714f185f25b269ac40b16698ee472cd46939adba0049ce81fd7d205861cd2ee
+    name: confluent-charts
+    urls:
+    - https://javawiz.github.io/confluent-charts/confluent-charts-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-04-30T02:48:49.961926+05:30"
+    dependencies:
+    - condition: cp-kafka.enabled
+      name: cp-kafka
+      repository: file://./charts/cp-kafka
+      version: 0.1.0
+    - condition: cp-zookeeper.enabled
+      name: cp-zookeeper
+      repository: file://./charts/cp-zookeeper
+      version: 0.1.0
+    - condition: cp-schema-registry.enabled
+      name: cp-schema-registry
+      repository: file://./charts/cp-schema-registry
+      version: 0.1.0
+    - condition: cp-kafka-rest.enabled
+      name: cp-kafka-rest
+      repository: file://./charts/cp-kafka-rest
+      version: 0.1.0
+    - condition: cp-kafka-connect.enabled
+      name: cp-kafka-connect
+      repository: file://./charts/cp-kafka-connect
+      version: 0.1.0
+    - condition: cp-ksql-server.enabled
+      name: cp-ksql-server
+      repository: file://./charts/cp-ksql-server
+      version: 0.1.0
+    - condition: cp-control-center.enabled
+      name: cp-control-center
+      repository: file://./charts/cp-control-center
+      version: 0.1.0
+    description: A Helm chart for Confluent Platform Community Edition
+    digest: 7eb9669a8a3ec37806bb792444a71f080cf504bbd7f77250f81e00c9206ee667
     name: confluent-charts
     urls:
     - https://javawiz.github.io/confluent-charts/confluent-charts-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-30T02:03:43.688216+05:30"
+generated: "2023-04-30T02:48:49.9541275+05:30"
