@@ -3,7 +3,7 @@ entries:
   confluent-charts:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-04-29T23:44:30.368351+05:30"
+    created: "2023-04-30T01:41:14.4255091+05:30"
     dependencies:
     - condition: cp-kafka.enabled
       name: cp-kafka
@@ -37,6 +37,6 @@ entries:
     digest: ea2e80fb2a377db9872be20784634b621b4c3eb443c86acd4cc0f61fe1d69775
     name: confluent-charts
     urls:
-    - https://github.com/JavaWiz/confluent-charts/confluent-charts-0.0.1.tgz
+    - https://javawiz.github.io/confluent-charts/confluent-charts-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-29T23:44:30.3623276+05:30"
+generated: "2023-04-30T01:41:14.4157144+05:30"
