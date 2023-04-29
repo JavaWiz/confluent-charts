@@ -3,7 +3,45 @@ entries:
   confluent-charts:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-04-30T02:48:49.961926+05:30"
+    created: "2023-04-30T03:15:53.0265584+05:30"
+    dependencies:
+    - condition: cp-kafka.enabled
+      name: cp-kafka
+      repository: file://./charts/cp-kafka
+      version: 0.1.0
+    - condition: cp-zookeeper.enabled
+      name: cp-zookeeper
+      repository: file://./charts/cp-zookeeper
+      version: 0.1.0
+    - condition: cp-schema-registry.enabled
+      name: cp-schema-registry
+      repository: file://./charts/cp-schema-registry
+      version: 0.1.0
+    - condition: cp-kafka-rest.enabled
+      name: cp-kafka-rest
+      repository: file://./charts/cp-kafka-rest
+      version: 0.1.0
+    - condition: cp-kafka-connect.enabled
+      name: cp-kafka-connect
+      repository: file://./charts/cp-kafka-connect
+      version: 0.1.0
+    - condition: cp-ksql-server.enabled
+      name: cp-ksql-server
+      repository: file://./charts/cp-ksql-server
+      version: 0.1.0
+    - condition: cp-control-center.enabled
+      name: cp-control-center
+      repository: file://./charts/cp-control-center
+      version: 0.1.0
+    description: A Helm chart for Confluent Platform Community Edition
+    digest: da6fb2a7a2be3f20bf7c2557dcaffb10743fcaf73d30100ec381bf3536821094
+    name: confluent-charts
+    urls:
+    - https://javawiz.github.io/confluent-charts/confluent-charts-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-04-30T03:15:53.0231109+05:30"
     dependencies:
     - condition: cp-kafka.enabled
       name: cp-kafka
@@ -41,7 +79,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-04-30T02:48:49.961926+05:30"
+    created: "2023-04-30T03:15:53.0184491+05:30"
     dependencies:
     - condition: cp-kafka.enabled
       name: cp-kafka
@@ -77,4 +115,4 @@ entries:
     urls:
     - https://javawiz.github.io/confluent-charts/confluent-charts-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-30T02:48:49.9541275+05:30"
+generated: "2023-04-30T03:15:53.0133284+05:30"
